@@ -51,19 +51,18 @@ header {
     text-decoration: none;
 }
 
-/* Por defecto (Computadora): se ve el nombre completo y se oculta EJE */
+/* Control de texto largo vs corto en el logo */
 .logo-short {
     display: none;
 }
 
-/* En teléfonos (pantallas menores a 768px): se oculta el largo y se muestra EJE */
-@media (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .logo-full {
-        display: none;
+        display: none !important;
     }
 
     .logo-short {
-        display: inline;
+        display: inline-block !important;
     }
 }
 

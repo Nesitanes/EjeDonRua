@@ -108,4 +108,17 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }, { passive: true });
     });
+
+    // Cambiar texto del logo según el ancho de pantalla
+    const logo = document.querySelector('.logo');
+    function actualizarLogo() {
+        if (!logo) return;
+        if (window.innerWidth <= 900) {
+            logo.textContent = 'EJE';
+        } else {
+            logo.textContent = 'Encuentro de Jóvenes con el Espíritu';
+        }
+    }
+    actualizarLogo();
+    window.addEventListener('resize', actualizarLogo);
 });
