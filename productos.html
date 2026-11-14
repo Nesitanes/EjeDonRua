@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | Grupo Juvenil</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Grupo Juvenil</a>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">☰</button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html" class="active">Productos</a></li>
+                <li><a href="actividades.html">Actividades</a></li>
+                <li><a href="contactos.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="section-title">
+            <h2>Tienda Pro-Fondos</h2>
+            <p>Todo lo recaudado se destina directamente a nuestros próximos retiros, campamentos y obras de apostolado.</p>
+        </div>
+
+        <section class="grid">
+            <!-- Producto 1 -->
+            <article class="card">
+                <div class="product-carousel">
+                    <div class="carousel-images">
+                        <img src="https://via.placeholder.com/400x250/2563eb/ffffff?text=diseño" alt="primer diseño" class="card-img active">
+                        <img src="https://via.placeholder.com/400x250/1d4ed8/ffffff?text=diseño" alt="segundo diseño" class="card-img">
+                        <img src="https://via.placeholder.com/400x250/f59e0b/1e293b?text=diseño" alt="tercer diseño" class="card-img">
+                    </div>
+                    <button class="carousel-btn prev" aria-label="Imagen anterior">&#10094;</button>
+                    <button class="carousel-btn next" aria-label="Imagen siguiente">&#10095;</button>
+                    <div class="carousel-dots"></div>
+                </div>
+
+                <div class="card-body">
+                    <span class="card-tag">Tote bag</span>
+                    <h3 class="card-title">Tote Bag "Catholic Girl"</h3>
+                    <p class="card-price">$5.00</p>
+                    <p class="card-text">100% algodón, Disponible en diseños.</p>
+                    <a href="https://forms.google.com/TU_ENLACE_DE_GOOGLE_FORM" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Pedir por Google Form</a>
+                </div>
+            </article>
+
+            <!-- Producto 2 -->
+            <article class="card">
+                <div class="product-carousel">
+                    <div class="carousel-images">
+                        <img src="https://via.placeholder.com/400x250/2563eb/ffffff?text=Pulsera" alt="Pack completo" class="card-img active">
+                        <img src="https://via.placeholder.com/400x250/10b981/ffffff?text=Pulsera" alt="Pulsera detalle" class="card-img">
+                    </div>
+                    <button class="carousel-btn prev" aria-label="Imagen anterior">&#10094;</button>
+                    <button class="carousel-btn next" aria-label="Imagen siguiente">&#10095;</button>
+                    <div class="carousel-dots"></div>
+                </div>
+
+                <div class="card-body">
+                    <span class="card-tag">Accesorios</span>
+                    <h3 class="card-title">Pulsera Colección "La Vida de Jesús" </h3>
+                    <p class="card-price">$2.25</p>
+                    <p class="card-text">Pulseras con diferentes diseños.</p>
+                    <a href="https://forms.google.com/TU_ENLACE_DE_GOOGLE_FORM" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Pedir por Google Form</a>
+                </div>
+            </article>
+
+            <!-- Producto 3 -->
+            <article class="card">
+                <div class="product-carousel">
+                    <div class="carousel-images">
+                        <img src="img/montañas1.png" alt="Imagen principal" class="card-img active">
+                        <img src="img/montañas2.png" alt="Interior brownies" class="card-img">
+                    </div>
+                    <button class="carousel-btn prev" aria-label="Imagen anterior">&#10094;</button>
+                    <button class="carousel-btn next" aria-label="Imagen siguiente">&#10095;</button>
+                    <div class="carousel-dots"></div>
+                </div>
+
+                <div class="card-body">
+                    <span class="card-tag">Camiseta</span>
+                    <h3 class="card-title">Colección "La Fe Mueve Montañas"</h3>
+                    <p class="card-price">$7.50</p>
+                    <p class="card-text">Caja con 4 brownies recién horneados por los jóvenes del grupo. Entregas los domingos.</p>
+                    <a href="https://forms.google.com/TU_ENLACE_DE_GOOGLE_FORM" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Pedir por Google Form</a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Grupo Juvenil. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
