@@ -51,6 +51,22 @@ header {
     text-decoration: none;
 }
 
+/* Por defecto (Computadora): se ve el nombre completo y se oculta EJE */
+.logo-short {
+    display: none;
+}
+
+/* En teléfonos (pantallas menores a 768px): se oculta el largo y se muestra EJE */
+@media (max-width: 768px) {
+    .logo-full {
+        display: none;
+    }
+
+    .logo-short {
+        display: inline;
+    }
+}
+
 .nav-links {
     list-style: none;
     display: flex;
