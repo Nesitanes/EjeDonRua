@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Menú hamburguesa para dispositivos móviles
+    //  Menú para dispositivos móviles
     const menuToggle = document.getElementById('menu-toggle');
     const navLinks = document.getElementById('nav-links');
 
@@ -9,13 +9,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 2. Actualizar año automático en el footer
+    // Actualizar año automático en el footer
     const yearSpan = document.getElementById('current-year');
     if (yearSpan) {
         yearSpan.textContent = new Date().getFullYear();
     }
 
-    // 3. Carrusel de imágenes en productos (Hover en PC + Swipe/Táctil en móvil)
+    // Carrusel de imágenes en productos (Hover en PC + Swipe/Táctil en móvil)
     const carousels = document.querySelectorAll('.product-carousel');
 
     carousels.forEach(carousel => {
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const nextBtn = carousel.querySelector('.next');
         const dotsContainer = carousel.querySelector('.carousel-dots');
 
-        // Si solo hay 1 imagen, ocultamos flechas y no activamos carrusel
+        // Si solo hay 1 imagen, oculta flechas y no activamos carrusel
         if (images.length <= 1) {
             if (prevBtn) prevBtn.style.display = 'none';
             if (nextBtn) nextBtn.style.display = 'none';
@@ -75,12 +75,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Rotación automática al pasar el mouse por encima (Computadora)
-        carousel.addEventListener('mouseenter', () => {
+        //carousel.addEventListener('mouseenter', () => {
             // Cambia a la siguiente foto tras 800ms y sigue rotando cada 1.4 segundos
-            hoverInterval = setInterval(() => {
-                showImage(currentIndex + 1);
-            }, 1400);
-        });
+          //  hoverInterval = setInterval(() => {
+            //    showImage(currentIndex + 1);
+            //}, 5500);
+        //});
 
         carousel.addEventListener('mouseleave', () => {
             clearInterval(hoverInterval);
